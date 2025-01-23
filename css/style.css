@@ -1,0 +1,265 @@
+
+* {
+    font-family: "Shadows Into Light", serif;
+    /* font-weight: 400; */
+    font-style: normal;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.nave {
+    background-color: #16a34a;
+    padding: 1em 0;
+}
+
+.nave nav {
+    display: flex; /* Flexbox para alinear elementos dentro de la navegación */
+    justify-content: space-between; /* Espacio entre logo y menú */
+    align-items: center; /* Centrado vertical de elementos */
+    padding: 0 20px; /* Margen horizontal interno para separar del borde */
+}
+
+.nave h3 {
+    color: white;
+    font-weight: bold;
+    margin: 0; /* Elimina el margen por defecto del h3 */
+    font-size: 1.5em; /* Tamaño de fuente relativo */
+}
+
+.nave ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Flexbox para alinear los items del menú horizontalmente */
+    justify-content: flex-end; /* Alinea los items a la derecha */
+    align-items: center; /* Centrado vertical de los items */
+}
+
+.nave ul li {
+    margin-left: 1.5em; /* Espacio entre items del menú */
+}
+
+.nave ul li:first-child {
+    margin-left: 0; /* Elimina el margen izquierdo del primer item */
+}
+
+.nave a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em; /* Tamaño de fuente base para los links de navegación */
+    padding: 0.5em 1em; /* Padding para hacer los links más clickeables */
+    display: block; /* Para que el padding afecte verticalmente */
+}
+
+
+/*
+  Estilos para la sección 'medio' (verde claro).
+*/
+.medio {
+    background-color: #22c55e; /* Verde más claro */
+    color: white;
+    text-align: center;
+    padding: 40px 20px; /* Padding vertical y horizontal, más consistente */
+}
+
+.medio h2 { /* Usa h2 para el título de esta sección, mejor semántica que h1 si hay un h1 principal en la página */
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.medio p {
+    font-size: 1.1em;
+    line-height: 1.6; /* Mejora la legibilidad del texto */
+    margin-bottom: 30px;
+}
+
+.medio-imagenes {
+    display: flex; /* Flexbox para alinear las imágenes horizontalmente */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    align-items: center; /* Centra verticalmente si es necesario */
+    flex-wrap: wrap; /* Permite que las imágenes se envuelvan a la siguiente línea en pantallas pequeñas */
+    gap: 20px; /* Espacio entre las imágenes */
+    margin-top: 20px;
+}
+
+.medio-imagenes img {
+    width: 150px; /* Ancho fijo para las imágenes, puedes ajustarlo */
+    height: auto; /* Altura automática para mantener la proporción */
+    border: 1px solid #ddd; /* Borde más sutil, puedes personalizar */
+    border-radius: 8px; /* Bordes redondeados suaves */
+    display: block; /* Elimina espacio extra debajo de la imagen */
+    margin: 0; /* Elimina márgenes innecesarios */
+}
+
+
+/*
+  Estilos para la sección 'medio-2' (gris claro).
+*/
+.medio-2 {
+    background-color: #f2f4f7; /* Gris muy claro */
+    text-align: center;
+    padding: 50px 20px; /* Padding vertical y horizontal */
+}
+
+.medio-2 h1 {
+    font-weight: bolder;
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.medio-2 p {
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #555; /* Un gris más oscuro para el texto en fondo claro */
+}
+
+.medio-2-contenedor-imagen { /* Contenedor para la imagen para mejor control */
+    max-width: 400px; /* Ancho máximo para la imagen */
+    margin: 0 auto; /* Centra el contenedor de la imagen */
+}
+
+.medio-2 img {
+    width: 100%; /* La imagen ocupa el 100% del ancho de su contenedor */
+    height: auto; /* Altura automática */
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    display: block; /* Elimina espacio extra debajo de la imagen */
+}
+
+
+/*
+  Estilos para las 'card' (tarjetas de contenido).
+*/
+.card-contenedor { /* Contenedor para las cards para gestionarlas en grupo si es necesario */
+    display: flex;
+    flex-wrap: wrap; /* Permite que las cards se envuelvan en pantallas pequeñas */
+    justify-content: center; /* Centra las cards horizontalmente */
+    gap: 20px; /* Espacio entre las cards */
+    padding: 20px;
+    max-width: 1200px; /* Ancho máximo del contenedor de cards */
+    margin: 0 auto; /* Centra el contenedor en la página */
+}
+
+
+.card {
+    background-color: white;
+    border-radius: 30px;
+    padding: 20px; /* Padding un poco mayor para mejor espacio interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra más sutil */
+    transition: transform 0.3s ease; /* Transición suave para el hover */
+    width: calc(20% - 20px); /* Aproximadamente un tercio del ancho, ajusta según necesites */
+    min-width: 250px; /* Ancho mínimo para evitar que se compriman demasiado en pantallas pequeñas */
+    margin: 10 10 10 10; /* Elimina margen innecesario, el espaciado lo gestiona el contenedor */
+    display: inline-block;
+    flex-direction: column; /* Alinea el contenido verticalmente dentro de la card */
+    justify-content: space-between; /* Espacia el contenido interno */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Ligeramente levanta la card en hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada en hover */
+}
+
+.card img {
+    max-width: 100%; /* Asegura que la imagen no se salga del contenedor */
+    height: 200px;
+    border-radius: 15px; /* Bordes redondeados para la imagen dentro de la card */
+    margin-bottom: 15px;
+    display: block; /* Elimina espacio extra debajo de la imagen */
+}
+
+.card h3 { /* Usa h3 para los títulos de las cards, jerarquía semántica */
+    font-size: 1.3em;
+    margin-top: 0; /* Elimina margen superior por defecto */
+    margin-bottom: 10px;
+}
+
+.card p {
+    text-align: left; /* Alinea el texto de descripción a la izquierda para mejor legibilidad */
+    font-weight: normal; /* Peso de fuente normal para el texto */
+    margin-top: 0;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    color: #333; /* Color de texto un poco más oscuro */
+}
+
+.card button {
+    background-color: #22c55e; /* Verde claro para el botón */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px; /* Padding un poco mayor para el botón */
+    text-align: center; /* Centra el texto dentro del botón */
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    cursor: pointer;
+    font-family: 'inherit'; /* Hereda la tipografía del body */
+    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+}
+
+.card button:hover {
+    background-color: #16a34a; /* Verde más oscuro en hover */
+}
+
+
+/*
+  Estilos para el footer.
+*/
+footer {
+    background-color: #1f2937; /* Gris oscuro */
+    color: white;
+    text-align: center;
+    padding: 25px 20px; /* Padding vertical y horizontal */
+    margin-top: auto; /* Empuja el footer hacia abajo si hay poco contenido */
+}
+
+footer p {
+    margin: 0; /* Elimina márgenes innecesarios en el párrafo del footer */
+    font-size: 0.9em;
+    opacity: 0.8; /* Ligera transparencia para el texto del footer */
+}
+
+
+/* Media Queries para responsive design (opcional, pero recomendado) */
+
+/* Para pantallas más pequeñas que 768px (tabletas y móviles) */
+@media (max-width: 768px) {
+    .nave nav {
+        flex-direction: column; /* Apila el logo y el menú verticalmente */
+        text-align: center; /* Centra el texto en pantallas pequeñas */
+    }
+
+    .nave h3 {
+        margin-left: 0; /* Elimina el margen en pantallas pequeñas */
+        margin-bottom: 10px; /* Espacio debajo del logo cuando está apilado */
+    }
+
+    .nave ul {
+        justify-content: center; /* Centra el menú en pantallas pequeñas */
+    }
+
+    .nave ul li {
+        margin-left: 1em; /* Reduce un poco el margen entre items en móvil */
+    }
+
+    .card-contenedor {
+        flex-direction: column; /* Apila las cards verticalmente en pantallas pequeñas */
+        align-items: center; /* Centra las cards apiladas */
+    }
+
+    .card {
+        width: 90%; /* Cards ocupan más ancho en pantallas pequeñas */
+        max-width: 400px; /* Máximo ancho para las cards apiladas */
+    }
+
+    .medio-imagenes img {
+        width: 120px; /* Reduce el tamaño de las imágenes en pantallas pequeñas */
+    }
+}

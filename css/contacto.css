@@ -1,0 +1,174 @@
+* {
+    font-family: "Shadows Into Light", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+}
+
+/*
+.nave {
+    background-color: #16a34a;
+}
+
+nav h3 {
+    margin-left: 16px;
+    color: white;
+    text-align: left;
+
+}
+
+.nave ul {
+    justify-content: right;
+}
+
+header nav {
+    text-align: right;
+    display: inline-block;
+    width: 97%;
+}
+
+header ul {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0.5em auto;
+    text-align: center;
+    margin-top: -40px;
+}
+
+header ul li {
+    display: inline-block;
+}
+
+header a {
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.medio {
+    background-color: #22c55e;
+    text-align: center;
+    padding: 5 10 5 10;
+    margin: auto;
+    color: white;
+}
+*/
+
+/* True */
+
+.nave {
+    background-color: #16a34a;
+    padding: 1em 0;
+}
+
+.nave nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    /* Margen horizontal interno para separar del borde */
+}
+
+.nave h3 {
+    color: white;
+    font-weight: bold;
+    margin: 0;
+    /* Elimina el margen por defecto del h3 */
+    font-size: 1.5em;
+    /* Tamaño de fuente relativo */
+}
+
+.nave ul {
+    list-style: none;
+    /* Elimina los puntos de la lista */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    /* Flexbox para alinear los items del menú horizontalmente */
+    justify-content: flex-end;
+    /* Alinea los items a la derecha */
+    align-items: center;
+    /* Centrado vertical de los items */
+}
+
+.nave ul li {
+    margin-left: 1.5em;
+    /* Espacio entre items del menú */
+}
+
+.nave ul li:first-child {
+    margin-left: 0;
+    /* Elimina el margen izquierdo del primer item */
+}
+
+.nave a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    /* Tamaño de fuente base para los links de navegación */
+    padding: 0.5em 1em;
+    /* Padding para hacer los links más clickeables */
+    display: block;
+    /* Para que el padding afecte verticalmente */
+}
+
+
+.medio {
+    background-color: #22c55e; /* Verde más claro */
+    color: white;
+    text-align: center;
+    padding: 9.76%;
+}
+
+.medio h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 10 10 10 10;
+}
+
+.medio p {
+        /* margin-top: 10px; */
+    /* margin-bottom: 10px; */
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    /* padding: 10 10 10 10;*/
+}
+
+.medio img {
+    width: 12%;
+    /* margin-left: 2%; */
+    /* margin-right: 1%; */
+    margin: 28px 0px;
+    border: 3px solid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 250px;
+    padding: 7px;
+}
+
+
+footer {
+    background-color: #1f2937;
+    /* Gris oscuro */
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+    /* Padding vertical y horizontal */
+    margin-top: auto;
+    /* Empuja el footer hacia abajo si hay poco contenido */
+}
+
+footer p {
+    margin: 0;
+    /* Elimina márgenes innecesarios en el párrafo del footer */
+    font-size: 0.9em;
+    opacity: 0.8;
+    /* Ligera transparencia para el texto del footer */
+}
