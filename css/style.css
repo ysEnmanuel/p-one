@@ -1,4 +1,3 @@
-
 * {
     font-family: "Shadows Into Light", serif;
     /* font-weight: 400; */
@@ -19,42 +18,42 @@ body {
 }
 
 .nave nav {
-    display: flex; /* Flexbox para alinear elementos dentro de la navegación */
-    justify-content: space-between; /* Espacio entre logo y menú */
-    align-items: center; /* Centrado vertical de elementos */
-    padding: 0 20px; /* Margen horizontal interno para separar del borde */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
 }
 
 .nave h3 {
     color: white;
     font-weight: bold;
-    margin: 0; /* Elimina el margen por defecto del h3 */
-    font-size: 1.5em; /* Tamaño de fuente relativo */
+    margin: 0;
+    font-size: 1.5em;
 }
 
 .nave ul {
-    list-style: none; /* Elimina los puntos de la lista */
+    list-style: none;
     padding: 0;
     margin: 0;
-    display: flex; /* Flexbox para alinear los items del menú horizontalmente */
-    justify-content: flex-end; /* Alinea los items a la derecha */
-    align-items: center; /* Centrado vertical de los items */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .nave ul li {
-    margin-left: 1.5em; /* Espacio entre items del menú */
+    margin-left: 1.5em;
 }
 
 .nave ul li:first-child {
-    margin-left: 0; /* Elimina el margen izquierdo del primer item */
+    margin-left: 0;
 }
 
 .nave a {
     color: white;
     text-decoration: none;
-    font-size: 1em; /* Tamaño de fuente base para los links de navegación */
-    padding: 0.5em 1em; /* Padding para hacer los links más clickeables */
-    display: block; /* Para que el padding afecte verticalmente */
+    font-size: 1em;
+    padding: 0.5em 1em;
+    display: block;
 }
 
 
@@ -62,39 +61,39 @@ body {
   Estilos para la sección 'medio' (verde claro).
 */
 .medio {
-    background-color: #22c55e; /* Verde más claro */
+    background-color: #22c55e;
     color: white;
     text-align: center;
-    padding: 40px 20px; /* Padding vertical y horizontal, más consistente */
+    padding: 40px 20px;
 }
 
-.medio h2 { /* Usa h2 para el título de esta sección, mejor semántica que h1 si hay un h1 principal en la página */
+.medio h2 {
     font-size: 2em;
     margin-bottom: 20px;
 }
 
 .medio p {
     font-size: 1.1em;
-    line-height: 1.6; /* Mejora la legibilidad del texto */
+    line-height: 1.6;
     margin-bottom: 30px;
 }
 
 .medio-imagenes {
-    display: flex; /* Flexbox para alinear las imágenes horizontalmente */
-    justify-content: center; /* Centra las imágenes horizontalmente */
-    align-items: center; /* Centra verticalmente si es necesario */
-    flex-wrap: wrap; /* Permite que las imágenes se envuelvan a la siguiente línea en pantallas pequeñas */
-    gap: 20px; /* Espacio entre las imágenes */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
     margin-top: 20px;
 }
 
 .medio-imagenes img {
-    width: 150px; /* Ancho fijo para las imágenes, puedes ajustarlo */
-    height: auto; /* Altura automática para mantener la proporción */
-    border: 1px solid #ddd; /* Borde más sutil, puedes personalizar */
-    border-radius: 8px; /* Bordes redondeados suaves */
-    display: block; /* Elimina espacio extra debajo de la imagen */
-    margin: 0; /* Elimina márgenes innecesarios */
+    width: 150px;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: block;
+    margin: 0;
 }
 
 
@@ -102,9 +101,9 @@ body {
   Estilos para la sección 'medio-2' (gris claro).
 */
 .medio-2 {
-    background-color: #f2f4f7; /* Gris muy claro */
+    background-color: #f2f4f7;
     text-align: center;
-    padding: 50px 20px; /* Padding vertical y horizontal */
+    padding: 50px 20px;
 }
 
 .medio-2 h1 {
@@ -116,114 +115,115 @@ body {
 .medio-2 p {
     line-height: 1.6;
     margin-bottom: 30px;
-    color: #555; /* Un gris más oscuro para el texto en fondo claro */
+    color: #555;
 }
 
-.medio-2-contenedor-imagen { /* Contenedor para la imagen para mejor control */
-    max-width: 400px; /* Ancho máximo para la imagen */
-    margin: 0 auto; /* Centra el contenedor de la imagen */
+.medio-2-contenedor-imagen {
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 .medio-2 img {
-    width: 100%; /* La imagen ocupa el 100% del ancho de su contenedor */
-    height: auto; /* Altura automática */
+    width: 100%;
+    height: auto;
     border-top-left-radius: 24px;
     border-top-right-radius: 24px;
-    display: block; /* Elimina espacio extra debajo de la imagen */
+    display: block;
 }
 
 
 /*
   Estilos para las 'card' (tarjetas de contenido).
 */
-.card-contenedor { /* Contenedor para las cards para gestionarlas en grupo si es necesario */
+.card-contenedor {
     display: flex;
-    flex-wrap: wrap; /* Permite que las cards se envuelvan en pantallas pequeñas */
-    justify-content: center; /* Centra las cards horizontalmente */
-    gap: 20px; /* Espacio entre las cards */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
     padding: 20px;
-    max-width: 1200px; /* Ancho máximo del contenedor de cards */
-    margin: 0 auto; /* Centra el contenedor en la página */
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 
 .card {
     background-color: white;
     border-radius: 30px;
-    padding: 20px; /* Padding un poco mayor para mejor espacio interno */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra más sutil */
-    transition: transform 0.3s ease; /* Transición suave para el hover */
-    width: calc(20% - 20px); /* Aproximadamente un tercio del ancho, ajusta según necesites */
-    min-width: 250px; /* Ancho mínimo para evitar que se compriman demasiado en pantallas pequeñas */
-    margin: 10 10 10 10; /* Elimina margen innecesario, el espaciado lo gestiona el contenedor */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    width: calc(20% - 20px);
+    min-width: 250px;
+    margin: 10 10 10 10;
     display: inline-block;
-    flex-direction: column; /* Alinea el contenido verticalmente dentro de la card */
-    justify-content: space-between; /* Espacia el contenido interno */
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .card:hover {
-    transform: translateY(-5px); /* Ligeramente levanta la card en hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada en hover */
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .card img {
-    max-width: 100%; /* Asegura que la imagen no se salga del contenedor */
+    max-width: 100%;
     height: 200px;
-    border-radius: 15px; /* Bordes redondeados para la imagen dentro de la card */
+    border-radius: 15px;
     margin-bottom: 15px;
-    display: block; /* Elimina espacio extra debajo de la imagen */
+    display: block;
 }
 
-.card h3 { /* Usa h3 para los títulos de las cards, jerarquía semántica */
+.card h3 {
     font-size: 1.3em;
-    margin-top: 0; /* Elimina margen superior por defecto */
+    margin-top: 0;
     margin-bottom: 10px;
 }
 
 .card p {
-    text-align: left; /* Alinea el texto de descripción a la izquierda para mejor legibilidad */
-    font-weight: normal; /* Peso de fuente normal para el texto */
+    text-align: left;
+    font-weight: normal;
     margin-top: 0;
     margin-bottom: 20px;
     line-height: 1.5;
-    color: #333; /* Color de texto un poco más oscuro */
+    color: #333;
 }
 
 .card button {
-    background-color: #22c55e; /* Verde claro para el botón */
+    background-color: #22c55e;
     color: white;
     border: none;
     border-radius: 5px;
-    padding: 10px 20px; /* Padding un poco mayor para el botón */
-    text-align: center; /* Centra el texto dentro del botón */
+    padding: 10px 20px;
+    text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 1em;
     cursor: pointer;
-    font-family: 'inherit'; /* Hereda la tipografía del body */
-    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+    font-family: 'inherit';
+    transition: background-color 0.3s ease;
 }
 
 .card button:hover {
-    background-color: #16a34a; /* Verde más oscuro en hover */
+    background-color: #16a34a;
 }
 
 
 /*
   Estilos para el footer.
 */
+
 footer {
-    background-color: #1f2937; /* Gris oscuro */
+    background-color: #1f2937;
     color: white;
     text-align: center;
-    padding: 25px 20px; /* Padding vertical y horizontal */
-    margin-top: auto; /* Empuja el footer hacia abajo si hay poco contenido */
+    padding: 25px 20px;
+    margin-top: auto;
 }
 
 footer p {
-    margin: 0; /* Elimina márgenes innecesarios en el párrafo del footer */
+    margin: 0;
     font-size: 0.9em;
-    opacity: 0.8; /* Ligera transparencia para el texto del footer */
+    opacity: 0.8;
 }
 
 
@@ -232,34 +232,34 @@ footer p {
 /* Para pantallas más pequeñas que 768px (tabletas y móviles) */
 @media (max-width: 768px) {
     .nave nav {
-        flex-direction: column; /* Apila el logo y el menú verticalmente */
-        text-align: center; /* Centra el texto en pantallas pequeñas */
+        flex-direction: column;
+        text-align: center;
     }
 
     .nave h3 {
-        margin-left: 0; /* Elimina el margen en pantallas pequeñas */
-        margin-bottom: 10px; /* Espacio debajo del logo cuando está apilado */
+        margin-left: 0;
+        margin-bottom: 10px;
     }
 
     .nave ul {
-        justify-content: center; /* Centra el menú en pantallas pequeñas */
+        justify-content: center;
     }
 
     .nave ul li {
-        margin-left: 1em; /* Reduce un poco el margen entre items en móvil */
+        margin-left: 1em;
     }
 
     .card-contenedor {
-        flex-direction: column; /* Apila las cards verticalmente en pantallas pequeñas */
-        align-items: center; /* Centra las cards apiladas */
+        flex-direction: column;
+        align-items: center;
     }
 
     .card {
-        width: 90%; /* Cards ocupan más ancho en pantallas pequeñas */
-        max-width: 400px; /* Máximo ancho para las cards apiladas */
+        width: 90%;
+        max-width: 400px;
     }
 
     .medio-imagenes img {
-        width: 120px; /* Reduce el tamaño de las imágenes en pantallas pequeñas */
+        width: 120px;
     }
 }
