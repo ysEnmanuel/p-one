@@ -27,7 +27,7 @@ Welcome to Project One! This repository contains a beautifully designed web proj
 ## 🛠️ Installation
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/ysEnmanuel/p-one.git
 cd p-one
 ```
 
@@ -37,7 +37,7 @@ Open `index.html` in your preferred web browser to see the project in action.
 
 ## 📝 License
 
-MIT © [Your Name]
+MIT © ysEnmanuel
 
 ## 🤝 Contributing
 
